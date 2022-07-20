@@ -1,0 +1,3 @@
+mainAxisAligment: En un Row es horizontal, en un Column es vertical
+
+Expanded: Dentro de una columna o fila, va a expandirse todo lo que pueda, por lo que viene bien para separar elementos
