@@ -1,5 +1,6 @@
-import 'package:disenos/widgets/background.dart';
 import 'package:flutter/material.dart';
+import 'package:disenos/widgets/background.dart';
+import 'package:disenos/widgets/page_title.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -8,9 +9,29 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        children: [
+        children: const [
           // Background
           Background(),
+          // Home Body
+          _HomeBody(),
+        ],
+      ),
+    );
+  }
+}
+
+class _HomeBody extends StatelessWidget {
+  const _HomeBody({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Column(
+        children: const [
+          // Títulos
+          PageTitle(),
         ],
       ),
     );
