@@ -6,7 +6,6 @@ class ScrollScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff30BAD6),
         body: PageView(
           scrollDirection: Axis.vertical,
           children: const [
