@@ -1,6 +1,9 @@
+import 'package:disenos/widgets/custom_bottom_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:disenos/widgets/background.dart';
 import 'package:disenos/widgets/page_title.dart';
+
+import '../widgets/card_table.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,6 +19,7 @@ class HomeScreen extends StatelessWidget {
           _HomeBody(),
         ],
       ),
+      bottomNavigationBar: CustomBottomNavigation(),
     );
   }
 }
@@ -32,6 +36,8 @@ class _HomeBody extends StatelessWidget {
         children: const [
           // Títulos
           PageTitle(),
+          // Card Table
+          CardTable(),
         ],
       ),
     );
