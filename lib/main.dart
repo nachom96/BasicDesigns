@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:disenos/screens/home_screen.dart';
 import 'package:disenos/screens/scroll_design.dart';
 import 'package:disenos/screens/basic_design.dart';
+import 'package:disenos/screens/select_screen.dart';
 import 'package:flutter/services.dart';
 
 void main() => runApp(MyApp());
@@ -17,11 +18,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      initialRoute: 'home_screen',
+      initialRoute: 'select_screen',
+      theme: ThemeData.dark(),
       routes: {
         'basic_design': (_) => BasicDesignScreen(),
         'scroll_screen': (_) => ScrollScreen(),
         'home_screen': (_) => HomeScreen(),
+        'select_screen': (_) => SelectScreen(),
       },
     );
   }

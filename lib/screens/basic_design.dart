@@ -6,6 +6,7 @@ class BasicDesignScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
         body: Column(
       children: [
         // Image
@@ -17,7 +18,7 @@ class BasicDesignScreen extends StatelessWidget {
         // Description
        Container(
         margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-        child: const Text('Duis exercitation minim sit mollit fugiat aute aliqua incididunt voluptate non dolore. Ex pariatur irure nostrud sit non nostrud irure velit reprehenderit ullamco in. Labore ullamco excepteur sit ea occaecat ipsum labore velit.')) 
+        child: const Text('Duis exercitation minim sit mollit fugiat aute aliqua incididunt voluptate non dolore. Ex pariatur irure nostrud sit non nostrud irure velit reprehenderit ullamco in. Labore ullamco excepteur sit ea occaecat ipsum labore velit.', style: TextStyle(color: Colors.black),)) 
       ],
     ));
   }
@@ -39,7 +40,7 @@ class Title extends StatelessWidget {
             children: const [
               Text(
                 'Oeschinen Lake Campground',
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
               ),
               Text(
                 'Kandersteg, Switzerland',
